@@ -1,0 +1,58 @@
+.card {
+  width: 339px;
+  min-height: 234px;
+  border-radius: 25px;
+  gap: 15px;
+  box-shadow: 0px 0px 45.9px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(5px);
+  position: relative;
+  z-index: 1;
+
+  &_title {
+    margin: 0;
+    padding: 15px 25px;
+    width: 289px;
+    font-size: 32px;
+    line-height: 38.73px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &_text {
+    margin: 0;
+    padding: 0 25px 15px 25px;
+    width: 289px;
+    height: 150px;
+    font-size: 12px;
+    line-height: 14.52px;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  &:active {
+    box-shadow: 0px 0px 45.9px 0px rgba(255, 47, 84, 1);
+    animation: bounce 1s infinite;
+    background-color: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(5px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-40px);
+  }
+  60% {
+    transform: translateY(-30px);
+  }
+}

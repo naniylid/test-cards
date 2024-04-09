@@ -1,0 +1,15 @@
+.rectangle {
+  width: 934.81px;
+  height: 300px;
+  border-radius: 300px;
+  opacity: 0.5;
+  transform: rotate(30deg);
+  background: rgba(112, 117, 241, 1);
+  position: absolute;
+  margin-top: 216.3px;
+  margin-left: 490px;
+
+  @media (max-width: 1100px) {
+    display: none;
+  }
+}

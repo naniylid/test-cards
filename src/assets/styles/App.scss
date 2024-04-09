@@ -1,0 +1,49 @@
+@import './Card.module.scss';
+@import './Rectangle.module.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+  background-color: #d4d4d4;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.cards {
+  margin: 129px 192px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 60px;
+  grid-row-gap: 60px;
+}
+
+@media (max-width: 1300px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards {
+    margin: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+}
